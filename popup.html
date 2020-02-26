@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="material-dashboard.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <style>
+      body {
+        width: 500px;
+        display: inline-table;
+      }
+
+      [data-background-color="ganna"] {
+        background: linear-gradient(135deg, #e72c30 0, rgba(231, 44, 48, 0.2) 100%);
+      }
+
+      .card {
+        margin: 0px;
+        border-radius: 0px;
+        margin-bottom: -1px;
+      }
+
+      .progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background: linear-gradient(135deg, #e72c30 0, rgba(231, 44, 48, .2) 100%);
+      }
+
+      .card .card-header {
+        margin: 10px;
+        padding: 0px;
+      }
+
+      .card .card-header img {
+        width: 55px;
+        height: 55px;
+        box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgb(231, 44, 48);
+      }
+
+      .card .card-content {
+        padding: 10px;
+        margin: 0px;
+        height: 80px;
+        font-size: 10px;
+        text-align: left;
+      }
+
+      .card .category:not([class*="text-"]) {
+        color: #333;
+      }
+
+      .card .card-footer {
+        margin: 0px;
+        padding: 5px 0px 0px 0px;
+        border: 0px;
+      }
+
+      .card .card-footer .material-icons {
+        font-size: 30px;
+        color: #333;
+      }
+
+      .card .card-footer .material-icons:hover {
+        cursor: pointer;
+      }
+
+      .color-red {
+        color : #b7282f !important;
+      }
+
+      .currentTime {
+        margin-right: 5px;
+        font-weight: bold;
+      }
+
+      .maxTime {
+        margin-right: 5px;
+        font-weight: bold;
+      }
+
+      .maxTime::before {
+        content: '/';
+        margin-right: 5px;
+        font-weight: bold;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="card card-stats active">
+          <div class="progress"></div>
+          <div class="card-header" data-background-color="ganna">
+            <img src="ganna.png" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">song name</h3>
+            <p class="category">movie name</p>
+          </div>
+          <div class="card-footer">
+            <i class="material-icons pause">pause</i>
+            <i class="material-icons play">play_arrow</i>
+            <i class="material-icons prev">skip_previous</i>
+            <i class="material-icons next">skip_next</i>
+            <i class="material-icons color-red favorite hide">favorite</i>
+            <i class="material-icons color-red unfavorite hide">favorite_border</i>
+            <span class="pull-right maxTime">05:24</span>
+            <span class="pull-right currentTime">00:21</span>
+          </div>
+        </div>
+        <div class="card card-stats nextSong0">
+          <div class="card-header" data-background-color="ganna">
+            <img src="ganna.png" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">song name</h3>
+            <p class="category">movie name</p>
+          </div>
+        </div>
+        <div class="card card-stats nextSong1">
+          <div class="card-header" data-background-color="ganna">
+            <img src="ganna.png" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">song name</h3>
+            <p class="category">movie name</p>
+          </div>
+        </div>
+        <div class="card card-stats nextSong2">
+          <div class="card-header" data-background-color="ganna">
+            <img src="ganna.png" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">song name</h3>
+            <p class="category">movie name</p>
+          </div>
+        </div>
+        <div class="card card-stats nextSong3">
+          <div class="card-header" data-background-color="ganna">
+            <img src="ganna.png" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">song name</h3>
+            <p class="category">movie name</p>
+          </div>
+        </div>
+        <div class="card card-stats nextSong4">
+          <div class="card-header" data-background-color="ganna">
+            <img src="ganna.png" />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">song name</h3>
+            <p class="category">movie name</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

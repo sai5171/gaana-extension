@@ -1,0 +1,30 @@
+{
+  "name": "Ganna extension",
+  "version": "0.0.3",
+  "manifest_version": 2,
+  "description": "Play, Pause, Change tracks, add favorite",
+  "icons": {
+    "192": "ganna.png"
+  },
+  "author": [{
+    "name": "sai5171",
+    "email": "saikirannikhil007@gmail.com"
+  }],
+  "permissions": [
+    "tabs", "*://*.gaana.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "matches": ["*://*.gaana.com/*"],
+    "js": ["jquery-3.1.1.min.js", "content.js"],
+    "run_at": "document_start"
+  }],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Ganna extension",
+    "default_icon": "ganna.png"
+  }
+}
